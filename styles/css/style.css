@@ -86,9 +86,6 @@ img {
   color: #fff;
   text-align: center; }
 
-body {
-  background-color: #000; }
-
 .section--1 {
   background-color: #000;
   overflow: hidden;
@@ -125,14 +122,16 @@ body {
 .section--1-prensentation-product {
   background: #000;
   position: relative;
-  padding-top: 22%;
-  mix-blend-mode: luminosity; }
+  padding-top: 22%; }
   @media only screen and (min-width: 768px) {
     .section--1-prensentation-product {
       padding-top: 17.5%; } }
   @media only screen and (min-width: 1220px) {
     .section--1-prensentation-product {
       padding-top: 15.5%; } }
+  @media only screen and (min-width: 1440px) {
+    .section--1-prensentation-product {
+      padding-top: 16.5%; } }
   .section--1-prensentation-product .section--1-img-rectangle {
     width: 100%; }
     @media only screen and (min-width: 768px) {
@@ -214,6 +213,9 @@ body {
   @media only screen and (min-width: 1220px) {
     .section--1-container-images-product {
       bottom: 290px; } }
+  @media only screen and (min-width: 1440px) {
+    .section--1-container-images-product {
+      bottom: 195px; } }
   .section--1-container-images-product .section--1-images-product {
     display: inline-block; }
   .section--1-container-images-product .section--1-images-product-left {
@@ -544,9 +546,6 @@ img {
   line-height: 25px;
   margin-bottom: 35px; }
 
-body {
-  background-color: #000; }
-
 .section--1 {
   background-color: #000;
   overflow: hidden;
@@ -583,14 +582,16 @@ body {
 .section--1-prensentation-product {
   background: #000;
   position: relative;
-  padding-top: 22%;
-  mix-blend-mode: luminosity; }
+  padding-top: 22%; }
   @media only screen and (min-width: 768px) {
     .section--1-prensentation-product {
       padding-top: 17.5%; } }
   @media only screen and (min-width: 1220px) {
     .section--1-prensentation-product {
       padding-top: 15.5%; } }
+  @media only screen and (min-width: 1440px) {
+    .section--1-prensentation-product {
+      padding-top: 16.5%; } }
   .section--1-prensentation-product .section--1-img-rectangle {
     width: 100%; }
     @media only screen and (min-width: 768px) {
@@ -672,6 +673,9 @@ body {
   @media only screen and (min-width: 1220px) {
     .section--1-container-images-product {
       bottom: 290px; } }
+  @media only screen and (min-width: 1440px) {
+    .section--1-container-images-product {
+      bottom: 195px; } }
   .section--1-container-images-product .section--1-images-product {
     display: inline-block; }
   .section--1-container-images-product .section--1-images-product-left {
