@@ -1,0 +1,20 @@
+// Mixin for tablet in portrait display media query
+@mixin tablet() {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+// Mixin for tablet in landscape display media query
+@mixin desktop() {
+    @media only screen and (min-width: 1220px) {
+        @content;
+    }
+}
+
+// Mixin for tablet in landscape display media query
+@mixin desktop-lg() {
+    @media only screen and (min-width: 1440px) {
+        @content;
+    }
+}
