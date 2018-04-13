@@ -99,6 +99,9 @@ img {
   @media only screen and (min-width: 1220px) {
     .section--1-pixel-top {
       top: 0; } }
+  @media only screen and (min-width: 1440px) {
+    .section--1-pixel-top {
+      top: -3%; } }
   .section--1-pixel-top .section--1-img-pixel-product {
     width: 100%;
     margin-top: -23px; }
@@ -131,7 +134,7 @@ img {
       padding-top: 15.5%; } }
   @media only screen and (min-width: 1440px) {
     .section--1-prensentation-product {
-      padding-top: 16.5%; } }
+      padding-top: 15.5%; } }
   .section--1-prensentation-product .section--1-img-rectangle {
     width: 100%; }
     @media only screen and (min-width: 768px) {
@@ -215,7 +218,7 @@ img {
       bottom: 290px; } }
   @media only screen and (min-width: 1440px) {
     .section--1-container-images-product {
-      bottom: 195px; } }
+      bottom: 10%; } }
   .section--1-container-images-product .section--1-images-product {
     display: inline-block; }
   .section--1-container-images-product .section--1-images-product-left {
@@ -264,6 +267,9 @@ img {
   bottom: 0;
   right: 0;
   position: absolute; }
+  @media only screen and (min-width: 1440px) {
+    .section--1-pixel-bottom {
+      z-index: 400; } }
   .section--1-pixel-bottom .section--1-img-pixel-product {
     width: 100%; }
   @media only screen and (min-width: 768px) {
@@ -559,6 +565,9 @@ img {
   @media only screen and (min-width: 1220px) {
     .section--1-pixel-top {
       top: 0; } }
+  @media only screen and (min-width: 1440px) {
+    .section--1-pixel-top {
+      top: -3%; } }
   .section--1-pixel-top .section--1-img-pixel-product {
     width: 100%;
     margin-top: -23px; }
@@ -591,7 +600,7 @@ img {
       padding-top: 15.5%; } }
   @media only screen and (min-width: 1440px) {
     .section--1-prensentation-product {
-      padding-top: 16.5%; } }
+      padding-top: 15.5%; } }
   .section--1-prensentation-product .section--1-img-rectangle {
     width: 100%; }
     @media only screen and (min-width: 768px) {
@@ -675,7 +684,7 @@ img {
       bottom: 290px; } }
   @media only screen and (min-width: 1440px) {
     .section--1-container-images-product {
-      bottom: 195px; } }
+      bottom: 10%; } }
   .section--1-container-images-product .section--1-images-product {
     display: inline-block; }
   .section--1-container-images-product .section--1-images-product-left {
@@ -724,6 +733,9 @@ img {
   bottom: 0;
   right: 0;
   position: absolute; }
+  @media only screen and (min-width: 1440px) {
+    .section--1-pixel-bottom {
+      z-index: 400; } }
   .section--1-pixel-bottom .section--1-img-pixel-product {
     width: 100%; }
   @media only screen and (min-width: 768px) {

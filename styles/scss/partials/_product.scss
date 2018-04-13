@@ -14,6 +14,10 @@
         top: 0;
     }
 
+    @include desktop-lg {
+        top: -3%;
+    }
+
     .section--1-img-pixel-product {
         width: 100%;
         margin-top: -23px;
@@ -60,7 +64,7 @@
     }
 
     @include desktop-lg {
-        padding-top: 16.5%;
+        padding-top: 15.5%;
     }
 
     .section--1-img-rectangle {
@@ -175,7 +179,7 @@
     }
 
     @include desktop-lg {
-        bottom: 195px;
+        bottom: 10%;
     }
 
     .section--1-images-product {
@@ -241,6 +245,10 @@
     bottom: 0;
     right: 0;
     position: absolute;
+
+    @include desktop-lg {
+        z-index: 400;
+    }
 
     .section--1-img-pixel-product {
         width: 100%;
