@@ -53,7 +53,7 @@ body {
     background: $black;
     position: relative;
     padding-top: 22%;
-    // z-index: 107;
+    mix-blend-mode: luminosity;
 
     @include tablet {
         padding-top: 17.5%;
@@ -124,7 +124,6 @@ body {
 
     @include tablet {
         position: relative;
-        // top: 42%;
         padding-left: 8%;
     }
 

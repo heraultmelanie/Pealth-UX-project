@@ -125,7 +125,8 @@ body {
 .section--1-prensentation-product {
   background: #000;
   position: relative;
-  padding-top: 22%; }
+  padding-top: 22%;
+  mix-blend-mode: luminosity; }
   @media only screen and (min-width: 768px) {
     .section--1-prensentation-product {
       padding-top: 17.5%; } }
@@ -582,7 +583,8 @@ body {
 .section--1-prensentation-product {
   background: #000;
   position: relative;
-  padding-top: 22%; }
+  padding-top: 22%;
+  mix-blend-mode: luminosity; }
   @media only screen and (min-width: 768px) {
     .section--1-prensentation-product {
       padding-top: 17.5%; } }
