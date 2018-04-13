@@ -1,3 +1,4 @@
+@import '_variables';
 
 .menu-burger {
     position: absolute;
@@ -6,6 +7,9 @@
     padding-top: 9px;
     cursor: pointer;
     z-index: 9999;
+    @include desktop(){
+        display: none;
+    }
 
     .menu-burger--bar {
         background: $white;
@@ -47,4 +51,11 @@
     font-family: $text;
     margin-top: 50px;
     font-weight: 300;
+}
+
+
+.menu-container{
+    padding: 20px;
+    background: $blue_dark;
+
 }
