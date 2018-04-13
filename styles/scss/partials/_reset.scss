@@ -45,3 +45,6 @@ table {
 * {
     box-sizing: border-box;
 }
+img {
+	mix-blend-mode: luminosity !important;
+}
