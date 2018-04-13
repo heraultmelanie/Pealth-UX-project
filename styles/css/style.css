@@ -53,18 +53,13 @@ table {
 img {
   mix-blend-mode: luminosity !important; }
 
-.header {
-  position: relative;
-  background-color: #0A0B41;
-  height: 40px;
-  z-index: 102; }
-
 .menu-burger {
   position: absolute;
   display: inline-block;
   padding-left: 20px;
   padding-top: 9px;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 999; }
   .menu-burger .menu-burger--bar {
     background: #fff;
     display: block;
@@ -74,212 +69,22 @@ img {
     .menu-burger .menu-burger--bar:last-child {
       margin-bottom: 0; }
 
-.header--container {
+.burger-container {
+  background: #0A0B41;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  top: 0;
+  width: 100vw;
+  padding: 30px;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
 
-.header--title {
+.burger-container__title {
   font-family: "Android 7";
-  font-size: 20px;
-  color: #fff;
-  text-align: center; }
-
-body {
-  background-color: #000; }
-
-.section--1 {
-  background-color: #000;
-  overflow: hidden;
-  height: 100vh; }
-
-.section--1-pixel-top {
-  position: absolute;
-  z-index: 100;
-  right: 0;
-  left: 0; }
-  @media only screen and (min-width: 1220px) {
-    .section--1-pixel-top {
-      top: 0; } }
-  .section--1-pixel-top .section--1-img-pixel-product {
-    width: 100%;
-    margin-top: -23px; }
-  @media only screen and (min-width: 768px) {
-    .section--1-pixel-top .section--1-mobile {
-      display: none; } }
-  .section--1-pixel-top .section--1-tablette {
-    display: none; }
-    @media only screen and (min-width: 768px) {
-      .section--1-pixel-top .section--1-tablette {
-        display: inherit; } }
-    @media only screen and (min-width: 1220px) {
-      .section--1-pixel-top .section--1-tablette {
-        display: none; } }
-  .section--1-pixel-top .section--1-img-pixel-product.section--1-img-desktop {
-    display: none; }
-    @media only screen and (min-width: 1220px) {
-      .section--1-pixel-top .section--1-img-pixel-product.section--1-img-desktop {
-        display: inherit; } }
-
-.section--1-prensentation-product {
-  background: #000;
-  position: relative;
-  padding-top: 22%;
-  mix-blend-mode: luminosity; }
-  @media only screen and (min-width: 768px) {
-    .section--1-prensentation-product {
-      padding-top: 17.5%; } }
-  @media only screen and (min-width: 1220px) {
-    .section--1-prensentation-product {
-      padding-top: 15.5%; } }
-  .section--1-prensentation-product .section--1-img-rectangle {
-    width: 100%; }
-    @media only screen and (min-width: 768px) {
-      .section--1-prensentation-product .section--1-img-rectangle {
-        width: 50.5%;
-        display: block;
-        float: left; } }
-  @media only screen and (min-width: 768px) {
-    .section--1-prensentation-product .section--1-mobile {
-      display: none; } }
-  .section--1-prensentation-product .section--1-tablette {
-    display: none; }
-    @media only screen and (min-width: 768px) {
-      .section--1-prensentation-product .section--1-tablette {
-        display: inherit; } }
-    @media only screen and (min-width: 1220px) {
-      .section--1-prensentation-product .section--1-tablette {
-        display: none; } }
-  .section--1-prensentation-product .section--1-img-rectangle.section--1-desktop {
-    display: none; }
-    @media only screen and (min-width: 1220px) {
-      .section--1-prensentation-product .section--1-img-rectangle.section--1-desktop {
-        display: inherit;
-        width: 52%; } }
-  .section--1-prensentation-product .section--1-img-carre  {
-    display: none; }
-  @media only screen and (min-width: 768px) {
-    .section--1-prensentation-product .section--1-img-carre.section--1-tablette {
-      display: inherit;
-      width: 49.5%;
-      float: right; } }
-  @media only screen and (min-width: 1220px) {
-    .section--1-prensentation-product .section--1-img-carre.section--1-tablette {
-      width: 48%; } }
-
-.section--1-prensentation-product--text {
-  position: absolute;
-  top: 58%;
-  transform: translateY(-50%);
-  padding-left: 25px;
-  z-index: 105; }
-  @media only screen and (min-width: 768px) {
-    .section--1-prensentation-product--text {
-      position: relative;
-      padding-left: 8%; } }
-  @media only screen and (min-width: 1220px) {
-    .section--1-prensentation-product--text {
-      position: absolute;
-      top: 206%;
-      left: 1%; } }
-  .section--1-prensentation-product--text .section--1-title-product {
-    font-family: "Android 7";
-    font-size: 40px;
-    color: #fff; }
-    @media only screen and (min-width: 768px) {
-      .section--1-prensentation-product--text .section--1-title-product {
-        font-size: 60px; } }
-    @media only screen and (min-width: 1220px) {
-      .section--1-prensentation-product--text .section--1-title-product {
-        font-size: 100px; } }
-  .section--1-prensentation-product--text .section--1-text-product {
-    font-family: "Lato", sans-serif;
-    font-size: 20px;
-    color: #fff; }
-    @media only screen and (min-width: 1220px) {
-      .section--1-prensentation-product--text .section--1-text-product {
-        font-size: 30px; } }
-
-.section--1-container-images-product {
-  position: relative;
-  overflow: visible;
-  margin-top: -85px; }
-  @media only screen and (min-width: 768px) {
-    .section--1-container-images-product {
-      position: absolute;
-      bottom: 146px;
-      left: 0;
-      right: 0; } }
-  @media only screen and (min-width: 1220px) {
-    .section--1-container-images-product {
-      bottom: 290px; } }
-  .section--1-container-images-product .section--1-images-product {
-    display: inline-block; }
-  .section--1-container-images-product .section--1-images-product-left {
-    float: left;
-    width: 68px;
-    mix-blend-mode: luminosity;
-    padding-top: 50px;
-    margin-left: -15px;
-    filter: blur(2px); }
-    @media only screen and (min-width: 768px) {
-      .section--1-container-images-product .section--1-images-product-left {
-        width: 113px; } }
-    @media only screen and (min-width: 1220px) {
-      .section--1-container-images-product .section--1-images-product-left {
-        width: 192px; } }
-  .section--1-container-images-product .section--1-images-product-center {
-    width: 154px;
-    mix-blend-mode: luminosity;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 200; }
-    @media only screen and (min-width: 768px) {
-      .section--1-container-images-product .section--1-images-product-center {
-        width: 241px; } }
-    @media only screen and (min-width: 1220px) {
-      .section--1-container-images-product .section--1-images-product-center {
-        width: 362px; } }
-  .section--1-container-images-product .section--1-images-product-right {
-    float: right;
-    width: 68px;
-    mix-blend-mode: luminosity;
-    margin-top: -33%;
-    margin-right: -7%;
-    filter: blur(2px); }
-    @media only screen and (min-width: 768px) {
-      .section--1-container-images-product .section--1-images-product-right {
-        width: 156px;
-        margin-top: -13%;
-        margin-right: 0; } }
-    @media only screen and (min-width: 1220px) {
-      .section--1-container-images-product .section--1-images-product-right {
-        width: 331px; } }
-
-.section--1-pixel-bottom {
-  bottom: 0;
-  right: 0;
-  position: absolute; }
-  .section--1-pixel-bottom .section--1-img-pixel-product {
-    width: 100%; }
-  @media only screen and (min-width: 768px) {
-    .section--1-pixel-bottom .section--1-mobile {
-      display: none; } }
-  .section--1-pixel-bottom .section--1-tablette {
-    display: none; }
-    @media only screen and (min-width: 768px) {
-      .section--1-pixel-bottom .section--1-tablette {
-        display: inherit; } }
-    @media only screen and (min-width: 1220px) {
-      .section--1-pixel-bottom .section--1-tablette {
-        display: none; } }
-  .section--1-pixel-bottom .section--1-img-pixel-product.section--1-desktop {
-    display: none; }
-    @media only screen and (min-width: 1220px) {
-      .section--1-pixel-bottom .section--1-img-pixel-product.section--1-desktop {
-        display: inherit; } }
+  font-size: 30px;
+  color: #fff; }
 
 @font-face {
   font-family: 'Android 7';
