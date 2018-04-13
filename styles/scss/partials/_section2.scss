@@ -1,6 +1,5 @@
 .section { 
-    background-color: $blue;
-    overflow: hidden;
+    
     &--2 {
         position: relative;      
        font-family: $text;
@@ -11,6 +10,7 @@
     .separator--imgphone  {
         display: block;
         img {
+            mix-blend-mode: inherit;
             position: relative;
             top: -2.8rem;
             z-index: 10;
@@ -22,14 +22,16 @@
         }      
     }
     .separator--imgtablet {
+        
         display: none;
         text-align: center;
         img {
+            mix-blend-mode: inherit;
             display: inline;
         }
         @include tablet() {
             display: block !important;
-            top: -9rem;
+            top: -8.8rem;
             
         }
         @include desktop() {
@@ -41,6 +43,7 @@
         display: none;
         text-align: center;
         img {
+            mix-blend-mode: inherit;
             display: inline;
         }
         @include desktop() {
@@ -70,7 +73,7 @@
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            top: 1rem;
+            top: 5rem;
             z-index: 50;
             img {
                 display: inline;
@@ -189,6 +192,7 @@
         &--word {
            margin: 0 auto;
            text-align: center;
+           margin-bottom: 3rem;
            img {
             display: inline;
             

@@ -139,10 +139,12 @@ body{
 }
 
 #bottom-tablet{
+    mix-blend-mode: inherit;
     width: 740px;
     height: 118px;
     display: block;
     display: none;
+    margin: 0 auto;
     @include tablet() {
         display: block
       }

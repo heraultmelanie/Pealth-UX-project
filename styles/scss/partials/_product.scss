@@ -24,6 +24,7 @@
     }
 
     .section--1-mobile {
+        
         @include tablet {
             display: none;
         }
@@ -78,12 +79,14 @@
     }
 
     .section--1-mobile {
+        mix-blend-mode: inherit;
         @include tablet {
             display: none;
         }
     }
 
     .section--1-tablette {
+        mix-blend-mode: inherit;
         display: none;
         @include tablet {
             display: inherit;
@@ -245,7 +248,7 @@
     bottom: 0;
     right: 0;
     position: absolute;
-
+    display: none;
     @include desktop-lg {
         z-index: 400;
     }
@@ -255,6 +258,7 @@
     }
 
     .section--1-mobile {
+        display: none;
         @include tablet {
             display: none;
         }
