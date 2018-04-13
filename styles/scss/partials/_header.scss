@@ -55,7 +55,38 @@
 
 
 .menu-container{
-    padding: 20px;
+    display: none;
+    width: 100vw;
+    padding: 15px 30px;
     background: $blue_dark;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    @include tablet(){
+        display: flex;
+    }
+}
 
+.menu-container__title{
+    font-family: $title;
+	font-size: 50px;
+	color: $white;
+}
+
+.menu-container__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.menu-container__text{
+    font-size: 20px;
+    color: $white;
+    font-family: $text;
+    font-weight: 300;
+    margin-left: 50px
 }
