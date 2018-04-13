@@ -3,7 +3,6 @@
 
 .advantages{
     background: $black;
-    padding: 20px;
 }
 
 .advantages-output{
@@ -11,6 +10,7 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+    padding: 30px;
 }
 
 .advantages-output__title{
@@ -31,4 +31,78 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.advantages-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px; 
+    padding: 30px 30px 0 30px;
+    @include tablet() {
+        flex-direction: inherit;
+        justify-content: center;
+      }
+}
+
+.advantages-content__title{
+    text-transform: uppercase;
+    font-size: 50px;
+    color: $white;
+    font-family: $text;
+    font-weight: 200;
+    @include tablet() {
+        transform: rotate(-90deg);
+      }
+}
+
+.advantages-content__trait{
+    width: 1px;
+    height: 65px;
+    background: $white;
+    border: none;
+    @include tablet() {
+        height: 445px;
+      }
+}
+
+.test{
+    margin-top: -15px;
+    padding:  20px 0;
+    background: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    @include tablet() {
+        margin-top: -40px;
+        margin-left: -149px;
+        width: 130px;
+        z-index: 0;
+      }
+}
+
+.advantages-list__text{
+    font-size: 20px;
+    color: $white;
+    font-family: $text;
+    margin-bottom: 30px;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    @include tablet() {
+        margin-bottom: 50px;
+      }
+    @include desktop() {
+       margin-bottom: 70px;
+     }
+}
+
+.pixel {
+    display: flex;
+    justify-content: flex-end;
+    img{
+        width: 295px;
+        height: 90px;
+    }
 }

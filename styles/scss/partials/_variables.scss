@@ -7,14 +7,14 @@ $blue_dark: #0A0B41;
 
 
 //Fonts
-$text: "Android 7";
-$title:"Android 7";
 @font-face {
     font-family: 'Android 7';
-    src: url('Android7.eot');
-    src: url('Android7.eot?#iefix') format('embedded-opentype'),
-        url('Android7.woff2') format('woff2'),
-        url('Android7.woff') format('woff');
+    src:url('Android7.eot'),
+    url('../fonts/Android7.woff2') format('woff2'),
+    url('../fonts/Android7.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
+$text: 'Lato', sans-serif;
+$title:"Android 7";
