@@ -129,5 +129,20 @@
                 </div>
             </section>
             <script src='js/counter.js'></script>
+            <script>
+                var burger = document.querySelector('.menu-burger');
+                var menu = document.querySelector('.burger-container');
+                var upDown = false;
+
+                burger.addEventListener('click', function(){
+                    if(upDown == false){
+                        menu.style.top = '0';
+                        upDown = true;
+                    } else {
+                        menu.style.top = '-800px';
+                        upDown = false;
+                    } 
+                })
+            </script>
 </body>
 </html>
