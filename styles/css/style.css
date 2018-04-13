@@ -53,6 +53,39 @@ table {
 img {
   mix-blend-mode: luminosity !important; }
 
+.header {
+  position: relative;
+  background-color: #0A0B41;
+  height: 40px;
+  z-index: 102; }
+
+.menu-burger {
+  position: absolute;
+  display: inline-block;
+  padding-left: 20px;
+  padding-top: 9px;
+  cursor: pointer; }
+  .menu-burger .menu-burger--bar {
+    background: #fff;
+    display: block;
+    margin-bottom: 6px;
+    width: 35px;
+    height: 3px; }
+    .menu-burger .menu-burger--bar:last-child {
+      margin-bottom: 0; }
+
+.header--container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.header--title {
+  font-family: "Android 7";
+  font-size: 20px;
+  color: #fff;
+  text-align: center; }
+
 body {
   background-color: #000; }
 
