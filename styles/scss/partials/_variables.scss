@@ -1,10 +1,20 @@
 //Colors
-$blue : #fff;
-$white: #fff; 
+
+$blue : #336be1;
+$white: #fff;
 $black: #000;
+$blue_dark: #0A0B41;
 
 
 //Fonts
-$text: "Arial";
-$title:"Helvetica";
+@font-face {
+    font-family: 'Android 7';
+    src:url('Android7.eot'),
+    url('../fonts/Android7.woff2') format('woff2'),
+    url('../fonts/Android7.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+$text: 'Lato', sans-serif;
+$title:"Android 7";
