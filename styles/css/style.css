@@ -44,6 +44,12 @@ table {
 * {
   box-sizing: border-box; }
 
+@font-face {
+  font-family: 'Android 7';
+  src: url("Android7.eot");
+  src: url("Android7.eot?#iefix") format("embedded-opentype"), url("Android7.woff2") format("woff2"), url("Android7.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 body {
   width: 100vw;
   background: red;
