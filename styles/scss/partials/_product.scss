@@ -1,0 +1,269 @@
+body {
+    background-color: $black;
+}
+
+.section--1 {
+    background-color: $black;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.section--1-pixel-top {
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    left: 0;
+
+    @include desktop {
+        top: 0;
+    }
+
+    .section--1-img-pixel-product {
+        width: 100%;
+        margin-top: -23px;
+    }
+
+    .section--1-mobile {
+        @include tablet {
+            display: none;
+        }
+    }
+
+    .section--1-tablette {
+        display: none;
+        @include tablet {
+            display: inherit;
+        }
+
+        @include desktop {
+            display: none;
+        }
+    }
+
+    .section--1-img-pixel-product.section--1-img-desktop {
+        display: none;
+        @include desktop {
+            display: inherit;
+        }
+    }
+
+}
+
+.section--1-prensentation-product {
+    background: $black;
+    position: relative;
+    padding-top: 22%;
+    // z-index: 107;
+
+    @include tablet {
+        padding-top: 17.5%;
+    }
+
+    @include desktop {
+        padding-top: 15.5%;
+    }
+
+    .section--1-img-rectangle {
+        width: 100%;
+
+        @include tablet {
+            width: 50.5%;
+            display: block;
+            float: left;
+        }
+    }
+
+    .section--1-mobile {
+        @include tablet {
+            display: none;
+        }
+    }
+
+    .section--1-tablette {
+        display: none;
+        @include tablet {
+            display: inherit;
+        }
+
+        @include desktop {
+            display: none;
+        }
+    }
+
+    .section--1-img-rectangle.section--1-desktop {
+        display: none;
+        @include desktop {
+            display: inherit;
+            width: 52%;
+        }
+    }
+
+    .section--1-img-carre {
+        display: none;
+    }
+
+    .section--1-img-carre.section--1-tablette {
+        @include tablet {
+            display: inherit;
+            width: 49.5%;
+            float: right;
+        }
+
+        @include desktop {
+            width: 48%;
+        }
+    }
+}
+
+.section--1-prensentation-product--text {
+    position: absolute;
+    top: 58%;
+    transform: translateY(-50%);
+    padding-left: 25px;
+    z-index: 105;
+
+    @include tablet {
+        position: relative;
+        // top: 42%;
+        padding-left: 8%;
+    }
+
+    @include desktop {
+        position: absolute;
+        top: 206%;
+        left: 1%;
+    }
+
+    .section--1-title-product {
+        font-family: $title;
+        font-size: 40px;
+        color: $white;
+
+        @include tablet {
+            font-size: 60px;
+        }
+
+        @include desktop {
+            font-size: 100px;
+        }
+    }
+
+    .section--1-text-product {
+        font-family: $text;
+        font-size: 20px;
+        color: $white;
+
+        @include desktop {
+            font-size: 30px;
+        }
+    }
+}
+
+.section--1-container-images-product {
+    position: relative;
+    overflow: visible;
+    margin-top: -85px;
+
+    @include tablet {
+        position: absolute;
+        bottom: 146px;
+        left: 0;
+        right: 0;
+    }
+
+    @include desktop {
+        bottom: 290px;
+    }
+
+    .section--1-images-product {
+        display: inline-block;
+        // position: absolute;
+    }
+
+    .section--1-images-product-left {
+        float: left;
+        width: 68px;
+        mix-blend-mode: luminosity;
+        padding-top: 50px;
+        margin-left: -15px;
+        filter: blur(2px);
+
+        @include tablet {
+            width: 113px;
+        }
+
+        @include desktop {
+            width: 192px;
+        }
+    }
+
+    .section--1-images-product-center {
+        width: 154px;
+        mix-blend-mode: luminosity;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 200;
+
+        @include tablet {
+            width: 241px;
+        }
+
+        @include desktop {
+            width: 362px;
+        }
+    }
+
+    .section--1-images-product-right {
+        float: right;
+        width: 68px;
+        mix-blend-mode: luminosity;
+        margin-top: -33%;
+        margin-right: -7%;
+        filter: blur(2px);
+
+        @include tablet {
+            width: 156px;
+            margin-top: -13%;
+            margin-right: 0;
+        }
+
+        @include desktop {
+            width: 331px;
+        }
+    }
+}
+
+.section--1-pixel-bottom {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+
+    .section--1-img-pixel-product {
+        width: 100%;
+    }
+
+    .section--1-mobile {
+        @include tablet {
+            display: none;
+        }
+    }
+
+    .section--1-tablette {
+        display: none;
+        @include tablet {
+            display: inherit;
+        }
+
+        @include desktop {
+            display: none;
+        }
+    }
+
+    .section--1-img-pixel-product.section--1-desktop {
+        display: none;
+        @include desktop {
+            display: inherit;
+        }
+    }
+}
