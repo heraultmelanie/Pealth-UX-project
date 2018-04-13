@@ -98,6 +98,7 @@
     }
 
     .section--1-img-rectangle.section--1-desktop {
+        mix-blend-mode: inherit;
         display: none;
         @include desktop {
             display: inherit;
